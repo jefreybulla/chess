@@ -1,13 +1,14 @@
 // This approach tries to Model the chess game from the perspective of the chess pieces as the object
 public class Board {
 
+    //instance variable that holds the state of the board
     String[][] grid = new String[8][8];
-
 
     public Board() {
 
       //grid represents the location of the positions on the board
       //Format: grid[row][column]. Player should follow this format to make moves.
+      //This constructor method initializes the board
 
       grid[0][0] = "wr1";
       grid[0][1] = "wn1";
@@ -83,13 +84,13 @@ public class Board {
 
     }
 
+    //renderBoard method prints the board
     public void renderBoard() {
       System.out.println("");
       System.out.println("        ### CHESS ###");
       System.out.println("");
       System.out.println("    0   1   2   3   4   5   6   7  ");
       System.out.println("  ---------------------------------");
-
       int counter = 0;
       while(counter<8){
         System.out.println(counter + " |"+grid[counter][0]+"|"+grid[counter][1]+"|"+grid[counter][2]+"|"+grid[counter][3]+"|"+grid[counter][4]+"|"+grid[counter][5]+"|"+grid[counter][6]+"|"+grid[counter][7]+"|");
@@ -98,6 +99,7 @@ public class Board {
       }
     }
 
+    //updateBoard method updates the board after any user has made a move.
     public void updateBoard(String piece,int newVerticalPosition, int newHorizontalPosition) {
       int horizontalCounter = 0;
       int verticalCounter = 0;
@@ -118,6 +120,8 @@ public class Board {
       }
     }
 
+    //the main method controls the turns and makes sure that the board is updated by calling updateBoard after a user makes a move
+    //if a player wants to close the program, he can type 'quit' instead of choosing a piece
     public static void main(String[] args) {
       Board myBoard = new Board();
       myBoard.renderBoard();

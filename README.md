@@ -20,6 +20,5 @@ $ javac Board.java
 ```
 $ java Board
 ```
-to run the program
 
 5) Play!
