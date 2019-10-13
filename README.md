@@ -9,8 +9,14 @@ https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538
 
 2) In the terminal move the folder that contains this repo
 
-3) Run $ javac Board.java
-
-4) After the program compiles, use $java Board to run the program
+3) Run
+```
+$ javac Board.java
+```
+4) After the program compiles, use 
+```
+$java Board
+```
+to run the program
 
 5) Play!
