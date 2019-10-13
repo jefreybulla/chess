@@ -121,8 +121,6 @@ public class Board {
     public static void main(String[] args) {
       Board myBoard = new Board();
       myBoard.renderBoard();
-      //myBoard.updateBoard("wn1",2,0);
-      //myBoard.renderBoard();
 
       boolean gameOver = false;
       String turn = "white";
@@ -156,8 +154,6 @@ public class Board {
         }
       }
 
-
-
-    }
+    } //end of main method
 
 }
